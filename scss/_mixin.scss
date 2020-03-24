@@ -1,0 +1,44 @@
+@mixin text ($color,$weight,$fsize,){
+    color: $color;
+    font-weight: $weight;
+    font-size: $fsize;
+}
+
+@mixin standart ($size,$fsize,$radius){
+    width: $size;
+    height: $size;
+    border-radius: $radius;
+}
+
+@mixin classic ($back-color,$radius,$fcolor,$fnsize) {
+   background-color: $back-color;
+   border-radius: $radius;
+   color: $fcolor;
+   font-size: $fnsize;
+
+}
+
+@mixin bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin input ($width,$fsize) {
+    width: $width;
+    color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    outline: none;
+    font-size:$fsize;
+    background: #fff;
+    border: none;
+    padding: 6px 12px;
+    border: none;
+
+}
